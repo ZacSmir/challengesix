@@ -4,7 +4,8 @@ quantityInput.keydown(function(e) {
   var keyCode = 13;
   console.log(keyCode)
   var inputValue = quantityInput.val();
-
+  var numberOfElements = 
+      
   // enter key!
   if (keyCode == 13) {	
     addElementsToThePage(inputValue);
