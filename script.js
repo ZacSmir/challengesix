@@ -13,7 +13,7 @@ quantityInput.keydown(function(e) {
 })
 
 function addElementsToThePage(numberOfElements) {	  
-  for (var i = 0; i < numberOfElements.val(); i++) {
+  for (var i = 0; i < numberOfElements; i++) {
     var newEl = $("<div class='new-el'>Hi there!</div>");		
     $(".element-display").append(newEl);
   }
