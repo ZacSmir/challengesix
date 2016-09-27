@@ -1,10 +1,10 @@
 var quantityInput = $(".element-quantity-input")
 
 quantityInput.keydown(function(e) {
-  var keyCode = 13;
+  var keyCode = e.val();
   console.log(keyCode)
   var inputValue = quantityInput.val();
-  var numberOfElements = 
+  var numberOfElements = keyCode
       
   // enter key!
   if (keyCode == 13) {	
@@ -13,7 +13,7 @@ quantityInput.keydown(function(e) {
 })
 
 function addElementsToThePage(numberOfElements) {	  
-  for (var i = 0; i < numberOfElements; i++) {
+  for (var i = 0; i < numberOfElements.val(); i++) {
     var newEl = $("<div class='new-el'>Hi there!</div>");		
     $(".element-display").append(newEl);
   }
